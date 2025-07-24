@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form & To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>My App</div>
+            <div>
+                <a href="#form">Form</a>
+                <a href="#todo">To-Do</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Form Section -->
+            <form id="form">
+                <h2>Contact Form</h2>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="phone" placeholder="Phone No" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div>
+                <!-- To-Do List -->
+                <div class="todo" id="todo">
+                    <h2>To-Do List</h2>
+                    <input type="text" id="taskInput" placeholder="New task">
+                    <button onclick="addTask()">Add Task</button>
+                    <ul id="taskList"></ul>
+                </div>
+
+                <!-- Image Gallery -->
+                <div class="gallery" id="gallery">
+                    <h2>Image Gallery</h2>
+                    <input type="text" id="imgUrl" placeholder="Image URL">
+                    <button onclick="addImage()">Add Image</button>
+                    <div id="images"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer content -->
+    <footer>
+        <div class="footer_con">
+            <div class="copyright">
+
+                <pre>
+                    Created By
+                  Mr. Gaurav Kumar
+              </pre>
+            </div>
+        </div>
+
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

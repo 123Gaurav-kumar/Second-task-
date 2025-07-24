@@ -1,0 +1,115 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e3e3e3;
+}
+
+/* Navigation - Flexbox */
+
+nav {
+    background-color: #1e9dec;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    height: 80px;
+    align-items: center;
+}
+
+
+nav a {
+    color: white;
+    margin-left: 5rem;
+    text-decoration: none;
+}
+
+/* Layout - CSS Grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Form Styles */
+form {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    /* background: #00000000; */
+}
+
+button{
+    color: rgb(0, 0, 0);
+    background: #62f8b2;
+    padding: 2px 2px 2px 2px;
+    border-radius: 7px;
+}
+
+/* To-Do List & Gallery */
+.todo,
+.gallery {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+
+.gallery img {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Footer Style */
+
+footer{
+    margin-top: 150px;
+}
+
+.footer_con {
+    padding: 30px 0px 40px 0px;
+    background-color: #919292;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.copyright {
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+}
